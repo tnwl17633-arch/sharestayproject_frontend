@@ -85,26 +85,26 @@ export default function Contact() {
 
 
         <div>
-          <label style={{ fontWeight: 500 }}>문의 내용</label>
-          <textarea
-            name="message"
-            value={form.message}
-            onChange={handleChange}
-            placeholder="문의하실 내용을 작성해주세요"
-            required
-            style={{
-              width: "100%",
-              padding: 10,
-              marginTop: 5,
-              borderRadius: 4,
-              border: "1px solid #ccc",
-              minHeight: 120,
-              resize: "vertical",
-            }}
-          />
-        </div>
+  <label style={{ fontWeight: 500 }}>
+    문의 내용 <span style={{ color: "red" }}>*</span>
+  </label>
+  <textarea
+    name="message"
+    value={form.message}
+    onChange={handleChange}
+    required
+    style={{
+      width: "100%",
+      padding: 10,
+      marginTop: 5,
+      borderRadius: 4,
+      border: "1px solid #ccc",
+      minHeight: 120,
+      resize: "vertical",
+    }}
+  />
+</div>
           
-
         <button
           type="submit"
           style={{
