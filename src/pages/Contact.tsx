@@ -22,14 +22,14 @@ export default function Contact() {
   };
 
   return (
-    <div
-      style={{
-        maxWidth: 600,
-        margin: "50px auto",
-        padding: 20,
-        border: "1px solid #ddd",
-        borderRadius: 8,
-        boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+  <div
+    style={{
+      maxWidth: 600,
+      margin: "50px auto",
+      padding: 20,
+      border: "1px solid #ddd",
+      borderRadius: 8,
+      boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
       }}
     >
       <h1 style={{ textAlign: "center", marginBottom: 10 }}>문의하기</h1>
@@ -46,18 +46,18 @@ export default function Contact() {
     이름 <span style={{ color: "red" }}>*</span>
   </label>
   <input
-    type="text"
-    name="name"
-    value={form.name}
-    onChange={handleChange}
-    placeholder="이름을 입력하세요"
-    required
-    style={{
-      width: "100%",
-      padding: 10,
-      marginTop: 5,
-      borderRadius: 4,
-      border: "1px solid #ccc",
+  type="text"
+  name="name"
+  value={form.name}
+  onChange={handleChange}
+  placeholder="이름을 입력하세요"
+  required
+  style={{
+    width: "100%",
+    padding: 10,
+    marginTop: 5,
+    borderRadius: 4,
+    border: "1px solid #ccc",
     }}
   />
 </div>
@@ -67,18 +67,18 @@ export default function Contact() {
     이메일 <span style={{ color: "red" }}>*</span>
   </label>
   <input
-    type="email"
-    name="email"
-    value={form.email}
-    onChange={handleChange}
-    placeholder="이메일을 입력하세요"
-    required
-    style={{
-      width: "100%",
-      padding: 10,
-      marginTop: 5,
-      borderRadius: 4,
-      border: "1px solid #ccc",
+  type="email"
+  name="email"
+  value={form.email}
+  onChange={handleChange}
+  placeholder="이메일을 입력하세요"
+  required
+  style={{
+    width: "100%",
+    padding: 10,
+    marginTop: 5,
+    borderRadius: 4,
+    border: "1px solid #ccc",
     }}
   />
 </div>
@@ -89,44 +89,44 @@ export default function Contact() {
     문의 내용 <span style={{ color: "red" }}>*</span>
   </label>
   <textarea
-    name="message"
-    value={form.message}
-    onChange={handleChange}
-    required
-    style={{
-      width: "100%",
-      padding: 10,
-      marginTop: 5,
-      borderRadius: 4,
-      border: "1px solid #ccc",
-      minHeight: 120,
-      resize: "vertical",
+  name="message"
+  value={form.message}
+  onChange={handleChange}
+  required
+  style={{
+    width: "100%",
+    padding: 10,
+    marginTop: 5,
+    borderRadius: 4,
+    border: "1px solid #ccc",
+    minHeight: 120,
+    resize: "vertical",
     }}
   />
 </div>
           
-        <button
-          type="submit"
-          style={{
-            padding: 12,
-            borderRadius: 4,
-            border: "none",
-            backgroundColor: "#0d47a1",
-            color: "#fff",
-            fontWeight: 600,
-            cursor: "pointer",
-            transition: "0.3s",
-          }}
-          onMouseOver={(e) =>
-            ((e.target as HTMLButtonElement).style.backgroundColor = "#0b3a91")
-          }
-          onMouseOut={(e) =>
-            ((e.target as HTMLButtonElement).style.backgroundColor = "#0d47a1")
-          }
-        >
-          문의 보내기
-        </button>
-      </form>
-    </div>
-  );
+<button
+type="submit"
+style={{
+  padding: 12,
+  borderRadius: 4,
+  border: "none",
+  backgroundColor: "#0d47a1",
+  color: "#fff",
+  fontWeight: 600,
+  cursor: "pointer",
+  transition: "0.3s",
+}}
+onMouseOver={(e) =>
+  ((e.target as HTMLButtonElement).style.backgroundColor = "#0b3a91")
+}
+onMouseOut={(e) =>
+  ((e.target as HTMLButtonElement).style.backgroundColor = "#0d47a1")
+}
+>
+문의 보내기
+</button>
+</form>
+</div>
+);
 }
